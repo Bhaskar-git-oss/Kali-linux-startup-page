@@ -1,0 +1,94 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('1301124.jpg'); /* Path to your background image */
+    background-size: cover; /* Makes sure the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.glowing-text {
+    font-style: italic;
+    font-size: 24px; /* Adjust the size as needed */
+    color: #ffffff; /* Light text color for contrast */
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan;
+    border: none;
+    background: transparent;
+    margin-bottom: 20px; /* Space between the glowing text and the search form */
+    text-align: center;
+    width: 100%; /* Makes the width adjustable */
+    max-width: 500px; /* Adjust this value as needed */
+    padding: 0;
+}
+ {
+    margin-bottom: 150px; /* Adjust space between logo and search form */
+}
+
+.logo img {
+    width: 300px; /* Adjust the width of the logo as needed */
+    height: auto;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Adjust this value as needed */
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    border: none;
+    border-radius: 0 25px 25px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-input,
+    .search-button {
+        border-radius: 25px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .search-button {
+        margin-bottom: 0;
+    }
+}
